@@ -75,6 +75,15 @@ def FindIntersection(d_g11, d_g22):
 	
 	
 #------------------------------------------------
-
-
+# It finds numbers of nucleotides within a given sequence.
+def CountACGT(seq):
+	seq = seq.lower();
+	n_a = seq.count("a");
+	n_c = seq.count("c");
+	n_g = seq.count("g");
+	n_t = seq.count("t");
+	n_other = len(seq) - (n_a + n_c + n_g + n_t);
+	if n_other > 0:
+		print "Sequence has symbols other than a,c,g,t!!!"
+	return [n_a, n_c, n_g, n_t, n_other];
 	
