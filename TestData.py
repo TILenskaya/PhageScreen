@@ -11,4 +11,4 @@ text2 = cm.GetText(finName2);
 d1 = cm.CreateDict(text1,m); # Host dictionary
 d2 = cm.CreateDict(text2,m); # Parasite dictionary
 
-print len(cm.FindIntersection(d1,d2)); # a number of unique strings of length m in the intersection between host and parasite dictionaries
+print "Number of unique strings in the intersection:", len(cm.FindIntersection(d1,d2)); # a number of unique strings of length m in the intersection between host and parasite dictionaries
